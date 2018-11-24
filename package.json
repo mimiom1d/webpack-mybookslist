@@ -1,16 +1,16 @@
 {
-  "name": "myreads",
+  "name": "mybooklist",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -d",
-    "build": "SET NODE_ENV=production && npm run clean && webpack -p",
-    "devclean": "npm run clean && webpack -d --watch",
-    "dev": "webpack-dev-server",
     "watch": "webpack --w",
-    "clean": "rimraf dist"
+    "dev": "webpack-dev-server",
+    "devclean": "npm run clean && webpack -d --watch",
+    "clean": "rimraf dist",
+    "build": "SET NODE_ENV=production && npm run clean && webpack -p"
   },
   "author": "Mimi Maldonado",
   "license": "ISC",
